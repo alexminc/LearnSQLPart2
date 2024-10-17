@@ -34,3 +34,4 @@ git branch -M main
 git push -u origin main
 git add .
 echo hello SQL
+psql --username=freecodecamp --dbname=postgres
