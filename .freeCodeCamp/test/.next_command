@@ -116,3 +116,4 @@ git push -u origin main
 ./student_info.sh
 ./student_info.sh
 ./student_info.sh
+./student_info.sh
