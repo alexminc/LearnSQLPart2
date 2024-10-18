@@ -38,3 +38,4 @@ echo "$($PSQL "select distinct(course) from students right join majors using(maj
 courses using(course_id) where (first_name = 'Obie' and last_name = 'Hilpert') or student_id is null order by course desc")"
 
 echo -e "\nList of courses, in alphabetical order, with only one student enrolled:"
+echo "$($PSQL "select course from students inner join majors_courses using(major_id) inner join courses using(course_id) group by course having count(student_id) = 1 order by course")"
